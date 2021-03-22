@@ -2,7 +2,7 @@
 Estudante#1-Ismael Muanza "NovaDev Academy"
 
 
-### Como contribuir: abaixo os passos para contribuir no Angola Api 	
+### Como contribuir No Projecto 	
 
 1. Faça um Fork no projecto (https://github.com/DevSpaceAngola/Estudante-1)	
 2. Selecione a branch raiz `developer` e dai siga o passo a seguir
