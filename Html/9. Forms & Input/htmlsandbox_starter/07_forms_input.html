@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms & Input</title>
+</head>
+<body>
+  
+  <form action="">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" value="JC DOS ABATES">
+    </div>
+<br>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email here">
+    </div>
+<br>
+    <div>
+      <label for="message">Message</label><br>
+      <textarea name="message" id="message" cols="50" rows="5"></textarea>
+    </div>
+<br>
+
+    <div>
+      <label for="sex">Sex</label>
+      <select name="sex" id="sex">
+        <option value="male">Male</option>
+        <option value="female" selected>Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+<br>
+
+    <div>
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age">
+    </div>
+<br>
+
+    <div>
+      <label for="birthdate">Birthdate</label>
+      <input type="date" name="birthdate" id="birthdate">
+    </div>
+    <br>
+    
+    <div>
+      <label for="">Membership</label><br>
+
+      <input type="radio" name="membership" id="simple" value="simple">
+      <label for="simple">Simple</label>
+
+      <input type="radio" name="membership" id="standard" checked>
+      <label for="standard">Standard</label>
+
+      <input type="radio" name="membership" id="super">
+      <label for="super">Super</label>
+    </div>
+    <br>
+
+      <div>
+        <label for="">I like ...</label><br>
+
+      <input type="checkbox" name="membership" id="car" value="simple">
+      <label for="car">Car</label>
+
+      <input type="checkbox" name="membership" id="bike" checked>
+      <label for="bike">Bike</label>
+
+      <input type="checkbox" name="membership" id="boat">
+      <label for="boat">Boat</label>
+      </div>
+<br>
+
+      <div>
+        <input type="submit" value="Submit">
+        <button type="submit">submit</button>
+        <button type="reset">Resetar</button>
+        <button disabled="disabled">Disable</button>
+      </div>
+  </form>
+
+</body>
+</html>
