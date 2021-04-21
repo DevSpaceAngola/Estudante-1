@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4. Box Shadows</title>
+  <style>
+    .container{
+      display: flex;
+    }
+
+
+    .box{
+      margin: 1rem;
+      padding: 1rem;
+      background: coral;
+      color: #fff;
+
+      /*Offset-x| Offset-y | color */
+      box-shadow: 10px 10px teal;
+
+      /*Offset-x| Offset-y |blur-radius| color */
+      box-shadow: 5px 5px 20px teal;
+
+      /*Negative Values*/
+      box-shadow: -10px -5px 10px rgba(0,0,0,.6);
+
+       /*Offset-x| Offset-y |blur-radius|spread radius| color */
+       box-shadow: 3px 3px 5px 2px teal;
+
+       /*inset| Offset-x| Offset-y| color */
+       /*inset - faz o contrário,se colocares para baixo, ele vai para cima e tbm a sombra vem de dentro para fora da caixa(bm ajustado) */
+       box-shadow: inset 3px 3px teal;
+
+      /*Multiple shadows*/
+      box-shadow:inset 3px 3px teal,inset -3px -3px red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, ut.</p>
+    </div>
+
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, ut.</p>
+    </div>
+
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, ut.</p>
+    </div>
+  </div>
+</body>
+</html>

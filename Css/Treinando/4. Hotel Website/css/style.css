@@ -1,0 +1,28 @@
+        :root{
+          --max-width: 1110px;
+          --primary-color: #f7c08a;
+        }
+        
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body{
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 1.4;
+        }
+
+        a{
+          color: #333;
+          text-decoration: none;
+        }
+
+        /*Classes Utilities */
+        .container{
+          padding: 0 2rem;
+          margin: auto;
+          overflow: hidden;
+        }
+

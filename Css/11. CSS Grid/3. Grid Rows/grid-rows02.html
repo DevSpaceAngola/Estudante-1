@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4. Spanning Columns & Rows</title>
+  <style>
+
+    .container{
+      display: grid;
+     /* grid-template-rows: 4fr 3fr auto;
+      grid-template-rows: repeat(3, 10rem); */
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: 1fr 1fr;/*Aqui estamos a atribuir estes valores, mas eles não estão contando por elemento mas sim por linha, ou seja, o 1º "1fr" foi para a linha 1, todos os elementos desta linha terão este tamanho "no caso 1fr", e o"3fr" vale para a segunda linha toda, etc.... isto devido ao acréscimo da linha "columns", pois antes mexíamos nos elementos 1 por 1 porque só estávamos trabalhando com rows.... */
+      grid-auto-rows: 2fr;
+     
+      
+    }
+    .item{
+      background: #f4f4f4;
+      font-weight: bold;
+      padding: 3rem;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+</body>
+</html>

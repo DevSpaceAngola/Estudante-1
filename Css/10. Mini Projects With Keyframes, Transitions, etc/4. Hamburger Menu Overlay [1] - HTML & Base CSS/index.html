@@ -1,0 +1,171 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Index</title>
+      <style>
+              :root{
+        --primary-color: rgba(13, 110, 139, 0.75);
+        --secondary-color: rgba(299, 148, 0, 0.9);
+        --overlay-color: rgba(24, 39, 51, 0.85);
+        --menu-speed: 0.75s;
+      }
+
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.4;
+      }
+
+      .container{
+        max-width: 960px;
+        margin: auto;
+        padding: 0 3rem;
+        overflow: hidden;
+      }
+
+      #showcase{
+        background: var(--primary-color);
+        height: 100vh;
+        color: #fff;
+
+      }
+
+      #showcase::before{
+        content: '';
+        background: url('./img/showcase.jpg') center center/cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      #showcase .showcase-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        color: #fff;
+      }
+
+      #showcase .showcase-container h1{
+        font-size: 3rem;
+      }
+
+      #showcase .showcase-container p{
+        font-size: 1.2rem;
+      }
+
+      .btn{
+        display: inline-block;
+        border: none;
+        margin-top: 1rem;
+        padding: 0.75rem 1.5rem;
+        color: #fff;
+        background: var(--primary-color);
+        text-decoration: none;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .btn:hover{
+        opacity: 0.7;
+      }
+
+      /*Menu*/
+      .menu-wrap{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .menu-wrap .toggler{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+        opacity: 0;
+      }
+
+      .menu-wrap .hamburguer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        z-index: 1;
+        background: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+      }
+
+      .menu-wrap .hamburguer > div{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+      }
+      
+      .menu-wrap .hamburguer > div::before,
+      .menu-wrap .hamburguer > div::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: inherit;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        z-index: 1;
+      } 
+
+      .menu-wrap .hamburguer > div::after{
+        top: 10px;
+      }
+      </style>
+    </head>
+    <body>
+      
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburguer"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header id="showcase">
+        <div class="container showcase-container">
+          <h1>Welcome</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, fugit reiciendis magni est maxime repudiandae! Architecto temporibus corporis placeat! Doloribus.</p>
+          <a href="" class="btn">Read More</a>
+        </div>
+      </header>
+    </body>
+    </html>
