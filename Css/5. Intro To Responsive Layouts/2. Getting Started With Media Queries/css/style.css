@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: gray;
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+div{
+  padding-bottom: 20px;
+}
+
+h1{
+  display: none;
+}
+
+@media (max-width: 576px){
+
+  body{
+    background: red;
+  }
+  #smartphone h1{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+  body{
+    background: green;
+  }
+
+  #normal h1{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+  body{
+    background: blue;
+  }
+
+  #tablet h1{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+  body{
+    background: orange;
+  }
+
+  #widscreen h1{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1201px){
+  body{
+    background: #333;
+  }
+
+  #landscale h1{
+    display: block;
+  }
+}

@@ -1,0 +1,67 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>2. Grid Basics & Columns</title>
+      <style>
+
+        .item{
+          background: #f4f4f4;
+          border: 1px solid #ccc;
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.3rem;
+          padding: 3rem;
+        }
+
+        .grid{
+          display: grid;
+          /*grid-template-columns: 200px 200px 200px; */
+          /*grid-template-columns: auto auto auto; */
+          /*grid-template-columns: repeat(4, 168px); */ 
+          grid-template-columns: 1fr 2fr 3fr 4fr;
+          
+        }
+
+        main{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 2rem;
+        }
+
+        section, aside{
+          border: 1px solid red;
+        }
+
+        /*
+        section{
+          flex: 1;
+        }
+
+        aside{
+          flex: 2;
+        } */
+      </style>
+    </head>
+    <body>
+      <div class="grid">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+      </div>
+
+      <main>
+        <section>
+          <h3>Welcome To My Site</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur repudiandae autem est voluptate, laboriosam impedit dolore voluptates fuga, inventore, tempore consequatur non incidunt aliquam molestias error voluptatem blanditiis. Aut!</p>
+        </section>
+
+        <aside>
+          <h3>Hello World</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, at odit! Exercitationem iure voluptas vel et debitis fugit facilis hic!</p>
+        </aside>
+      </main>
+    </body>
+    </html>

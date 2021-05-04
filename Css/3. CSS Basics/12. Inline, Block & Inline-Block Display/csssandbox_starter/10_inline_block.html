@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inline & Block Styling</title>
+  <style>
+
+    *{
+      
+      box-sizing: border-box;
+    }
+  ul{
+    list-style: none;
+  
+  }
+
+  ul li{
+    width: 100px;
+    float: left;
+    border: 1px solid red;
+  }
+
+  .box{
+    width: 200px;
+    padding: 10px;
+    background: #f4f4f4;
+    color: #333;
+    display: inline-block;
+    margin-bottom: 5px;
+
+  }
+
+  .link{
+    width: 200px;
+    border: 1px solid coral;
+  }
+
+  .link a{
+    text-decoration: none;
+    display: block;
+  }
+
+  img{
+    border: 1px solid green;
+    margin: auto;
+    display: block;
+  }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="">Tecnology</a></li>
+    <li><a href="">Business</a></li>
+    <li><a href="">Fashion</a></li>
+  </ul>
+
+  <br><br>
+  <div class="link">
+    <a href="">Link 1</a>
+    <a href="">Link 2</a>
+    <a href="">Link 3</a>
+  </div>
+
+  <br><br>
+
+  <div class="box">
+    <h3>Heading1</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur corrupti modi a doloremque. Quaerat ut voluptatum sint aspernatur dolorem cupiditate veritatis ipsam, qui fugit ratione explicabo illum incidunt commodi in sapiente tempore et, laudantium excepturi eius tenetur. Esse, officia debitis.</p>
+  </div>
+
+  <div class="box">
+    <h3>Heading1</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur corrupti modi a doloremque. Quaerat ut voluptatum sint aspernatur dolorem cupiditate veritatis ipsam, qui fugit ratione explicabo illum incidunt commodi in sapiente tempore et, laudantium excepturi eius tenetur. Esse, officia debitis.</p>
+  </div>
+
+  <div class="box">
+    <h3>Heading1</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur corrupti modi a doloremque. Quaerat ut voluptatum sint aspernatur dolorem cupiditate veritatis ipsam, qui fugit ratione explicabo illum incidunt commodi in sapiente tempore et, laudantium excepturi eius tenetur. Esse, officia debitis.</p>
+  </div>
+  <br><br>
+  <img src="./img/leaf.png" alt="">
+</body>
+</html>

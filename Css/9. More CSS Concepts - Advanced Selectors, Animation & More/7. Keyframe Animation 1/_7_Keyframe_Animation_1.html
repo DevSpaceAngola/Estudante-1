@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>7. Keyframe Animation 1</title>
+      <style>
+        body{
+          background: #333;
+        }
+
+        .box{
+          width: 8rem;
+          height: 8rem;
+          background: #fff;
+          position: relative;
+          /*
+          animation-name: animate1;
+          animation-duration: 2s;
+          animation-iteration-count: 1;
+          animation-fill-mode:forwards;
+          animation-timing-function: ease-in;
+          animation-delay: 5ms;
+          animation-direction:alternate; */
+          /*Tbm temos a propriedade estenográfica */
+          animation: animate1 2s forwards 5ms ease-in;
+        }
+
+        @keyframes animate1{
+          from{
+            width: 8rem;
+            top: 0;
+            left: 0;
+          }
+
+          to{
+            width: 32rem;
+            background: #93cb52;
+            top: 20rem;
+            left: 5rem;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="box"></div>
+    </body>
+    </html>
